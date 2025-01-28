@@ -1,0 +1,25 @@
+.background-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+  }
+
+.button-custom
+{
+    font-family:sans-serif;
+    font-weight: bolder;
+    color: white;
+    border: 5px;
+    border-radius: 50px;
+    background-color: #fd7e14;
+}
+
+.button-custom:hover
+{
+    background-color: white;
+    color: #fd7e14;
+}
