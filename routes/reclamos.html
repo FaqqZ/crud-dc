@@ -43,10 +43,24 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="domicilio-reclamo" class="form-label"
+            <label for="descripcion-reclamo" class="form-label"
+              >Descripción del reclamo</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="descripcion-reclamo"
+              maxlength="250"
+            />
+            <label for="descripcion-reclamo" class="form-label"
               >Domicilio del reclamo</label
             >
-            <input type="text" class="form-control" id="domicilio-reclamo" />
+            <input
+              type="text"
+              class="form-control"
+              id="domicilio-reclamo"
+              maxlength="25"
+            />
           </div>
 
           <div class="mb-3">
@@ -55,22 +69,89 @@
             >
             <select class="form-select" aria-label="tipo-de-reclamo-desc">
               <option selected>Por favor seleccione una opción</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="sin_alumbrado_publico">
+                Sin alumbrado público
+              </option>
+              <option value="semaforo_sin_funcionar">
+                Semáforo sin funcionar
+              </option>
+              <option value="arbol_por_caer">Arbol por caer</option>
+              <option value="arbol_caido">Arbol caído</option>
+              <option value="sin_energia_electrica">
+                Sin energía eléctrica
+              </option>
+              <option value="poste_por_caer">Poste por caer</option>
+              <option value="cables_cortados">Cables cortados</option>
+              <option value="incendio">Incendio</option>
+              <option value="perdida_de_agua">Pérdida de agua</option>
+              <option value="rama_caida">Rama caída</option>
+              <option value="inundaciones">Inundaciones</option>
+              <option value="perdida_de_gas">Pérdida de gas</option>
+              <option value="derrame_de_material_contaminado">
+                Derrame de material contaminado
+              </option>
+              <option value="basural">Basural</option>
+              <option value="bocatormenta_obstruida">
+                Bocatormenta obstruida
+              </option>
+              <option value="persona_en_situacion_de_calle">
+                Persona en situación de calle
+              </option>
+              <option value="bache">Bache</option>
+              <option value="hundimiento">Hundimiento</option>
+              <option value="panal_de_abejas">Panal de abejas</option>
+              <option value="poste_caido">Poste caído</option>
+              <option value="rama_por_caer">Rama por caer</option>
+              <option value="robo">Robo</option>
+              <option value="ruidos_molestos">Ruidos molestos</option>
+              <option value="sin_agua_potable">Sin agua potable</option>
+              <option value="abandono_de_persona">Abandono de persona</option>
+              <option value="amenaza_de_atentado">Amenaza de atentado</option>
+              <option value="choque">Choque</option>
+              <option value="derrame_de_combustible">
+                Derrame de combustible
+              </option>
+              <option value="explosion">Explosión</option>
+              <option value="falta_tapa_de_cloaca">Falta tapa de cloaca</option>
+              <option value="rescate_de_animal">Rescate de animal</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="derivado-a" class="form-label">Derivado a</label>
             <select class="form-select" aria-label="derivado-a-desc">
               <option selected>Por favor seleccione una opción</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="edet">EDET</option>
+              <option value="naturgy">NATURGY</option>
+              <option value="obras_publicas">OBRAS PÚBLICAS</option>
+              <option value="transito">TRÁNSITO</option>
+              <option value="urbanidad_e_higiene">URBANIDAD E HIGIENE</option>
+              <option value="bomberos">BOMBEROS</option>
+              <option value="espacios_verdes">ESPACIOS VERDES</option>
+              <option value="semaforizacion">SEMAFORIZACIÓN</option>
+              <option value="alumbrado_publico">ALUMBRADO PÚBLICO</option>
+              <option value="edet">EDET</option>
+              <option value="transito">TRÁNSITO</option>
+              <option value="direccion_de_familia">DIRECCIÓN DE FAMILIA</option>
+              <option value="arbolado">ARBOLADO</option>
+              <option value="107">107</option>
+              <option value="espacios_aereos">ESPACIOS AÉREOS</option>
+              <option value="sat">S.A.T.</option>
+              <option value="naturgy">NATURGY</option>
+              <option value="telecom">TELECOM</option>
+              <option value="bomberos">BOMBEROS</option>
+              <option value="obras_publicas">OBRAS PÚBLICAS</option>
+              <option value="catastro">CATASTRO</option>
+              <option value="espacios_verdes">ESPACIOS VERDES</option>
+              <option value="urbanidad_e_higiene">URBANIDAD E HIGIENE</option>
+              <option value="semaforizacion">SEMAFORIZACIÓN</option>
+              <option value="alumbrado_publico">ALUMBRADO PÚBLICO</option>
+              on>
             </select>
           </div>
           <div class="mb-3 text-center">
-            <button type="submit" class="btn btn-primary">Cargar</button>
+            <button type="submit" class="btn btn-primary button-custom">
+              Cargar
+            </button>
           </div>
         </form>
       </div>
