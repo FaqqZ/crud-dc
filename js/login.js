@@ -24,16 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Guardar en localStorage
     localStorage.setItem("registros", JSON.stringify(registros));
 
-    console.log("Registros almacenados:", registros); // Ver en consola
+    // Mostrar en consola para depuración
+    console.log("Registros guardados en localStorage:", registros);
 
     // Limpiar formulario
     form.reset();
 
     // Cerrar modal después del registro
-    const modal = bootstrap.Modal.getInstance(document.getElementById("login-modal"));
-    modal.hide();
+    const modal = bootstrap.Modal.getInstance(
+      document.getElementById("login-modal")
+    );
+    if (modal) {
+      modal.hide();
+    }
 
+    // Redirigir a la página de reclamos
     window.location.href = "routes/reclamos.html";
-
   });
 });
