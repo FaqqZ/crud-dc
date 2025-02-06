@@ -1,0 +1,22 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-fluid-custom {
+  text-align: center;
+  color: white;
+  background-color: #2b3373;
+}
+
+.navbar {
+  background-color: #2b3373 !important;
+}
+
+.navbar .logo-navbar {
+  height: 100px;
+}
+
+.button-custom
+{
+  background-color: #f38314 ;
+  border-color: #f38314 ;
+}

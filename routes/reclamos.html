@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/reclamos.css" />
+    <title>Reclamos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-center">
+          <span class="navbar-brand mb-0 h1">
+            <img class="logo-navbar" src="../src/logo-dc.png" alt="" />
+          </span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-fluid">
+        <form id="reclamoForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fecha</label>
+            <input
+              type="date"
+              class="form-control"
+              id="fecha-reclamo"
+              aria-describedby="fecha-reclamo-desc"
+            />
+            <div id="fecha-reclamo-desc" class="form-text">
+              Seleccione la fecha del día de hoy
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="descripcion-reclamo" class="form-label"
+              >Descripción del reclamo</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="descripcion-reclamo"
+              maxlength="250"
+            />
+            <label for="descripcion-reclamo" class="form-label"
+              >Domicilio del reclamo</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="domicilio-reclamo"
+              maxlength="25"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="tipo-de-reclamo" class="form-label"
+              >Tipo de reclamo</label
+            >
+            <select class="form-select" aria-label="tipo-de-reclamo-desc">
+              <option selected>Por favor seleccione una opción</option>
+              <option value="sin_alumbrado_publico">
+                Sin alumbrado público
+              </option>
+              <option value="semaforo_sin_funcionar">
+                Semáforo sin funcionar
+              </option>
+              <option value="arbol_por_caer">Arbol por caer</option>
+              <option value="arbol_caido">Arbol caído</option>
+              <option value="sin_energia_electrica">
+                Sin energía eléctrica
+              </option>
+              <option value="poste_por_caer">Poste por caer</option>
+              <option value="cables_cortados">Cables cortados</option>
+              <option value="incendio">Incendio</option>
+              <option value="perdida_de_agua">Pérdida de agua</option>
+              <option value="rama_caida">Rama caída</option>
+              <option value="inundaciones">Inundaciones</option>
+              <option value="perdida_de_gas">Pérdida de gas</option>
+              <option value="derrame_de_material_contaminado">
+                Derrame de material contaminado
+              </option>
+              <option value="basural">Basural</option>
+              <option value="bocatormenta_obstruida">
+                Bocatormenta obstruida
+              </option>
+              <option value="persona_en_situacion_de_calle">
+                Persona en situación de calle
+              </option>
+              <option value="bache">Bache</option>
+              <option value="hundimiento">Hundimiento</option>
+              <option value="panal_de_abejas">Panal de abejas</option>
+              <option value="poste_caido">Poste caído</option>
+              <option value="rama_por_caer">Rama por caer</option>
+              <option value="robo">Robo</option>
+              <option value="ruidos_molestos">Ruidos molestos</option>
+              <option value="sin_agua_potable">Sin agua potable</option>
+              <option value="abandono_de_persona">Abandono de persona</option>
+              <option value="amenaza_de_atentado">Amenaza de atentado</option>
+              <option value="choque">Choque</option>
+              <option value="derrame_de_combustible">
+                Derrame de combustible
+              </option>
+              <option value="explosion">Explosión</option>
+              <option value="falta_tapa_de_cloaca">Falta tapa de cloaca</option>
+              <option value="rescate_de_animal">Rescate de animal</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="derivado-a" class="form-label">Derivado a</label>
+            <select class="form-select" aria-label="derivado-a-desc">
+              <option selected>Por favor seleccione una opción</option>
+              <option value="edet">EDET</option>
+              <option value="naturgy">NATURGY</option>
+              <option value="obras_publicas">OBRAS PÚBLICAS</option>
+              <option value="transito">TRÁNSITO</option>
+              <option value="urbanidad_e_higiene">URBANIDAD E HIGIENE</option>
+              <option value="bomberos">BOMBEROS</option>
+              <option value="espacios_verdes">ESPACIOS VERDES</option>
+              <option value="semaforizacion">SEMAFORIZACIÓN</option>
+              <option value="alumbrado_publico">ALUMBRADO PÚBLICO</option>
+              <option value="direccion_de_familia">DIRECCIÓN DE FAMILIA</option>
+              <option value="arbolado">ARBOLADO</option>
+              <option value="107">107</option>
+              <option value="espacios_aereos">ESPACIOS AÉREOS</option>
+              <option value="sat">S.A.T.</option>
+              <option value="telecom">TELECOM</option>
+              <option value="catastro">CATASTRO</option>
+            </select>
+          </div>
+          
+          <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary button-custom">
+              Cargar
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid-custom">
+        Todos los derechos reservados. Dirección de Defensa Civil ®
+      </div>
+    </footer>
+    <script src="../js/reclamos.js"></script>
+  </body>
+</html>
